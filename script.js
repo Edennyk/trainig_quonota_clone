@@ -27,7 +27,7 @@ $(document).ready(function(){
     });  
   });
 
-  
+  // img slider
   $(function () {
     $('.slider').slick({
       slide: 'div', 
@@ -38,3 +38,22 @@ $(document).ready(function(){
     });
   });
 
+// rolling number
+$(function(){
+
+
+
+  $(window).scroll(function(){
+    var scrollValue = $('.stat-section').offset().top;
+    
+  if($(window).scrollTop() >= scrollValue){
+    $({val:52}).animate({val:100}, {
+      duration:2000,
+      progress:function(){
+        var now = this.val;
+        $('.count_num').text(Math.ceil(now));
+      }
+    });
+  }
+  });
+});
