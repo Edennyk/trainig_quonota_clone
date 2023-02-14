@@ -26,3 +26,15 @@ $(document).ready(function(){
      }
     });  
   });
+
+  
+  $(function () {
+    $('.slider').slick({
+      slide: 'div', 
+        slidesToShow: 3,
+        arrows : true,  
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+    });
+  });
+
