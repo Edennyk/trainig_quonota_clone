@@ -1,407 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <title>Quonota Clone</title>
+</head>
 
-     <script
-      src="https://kit.fontawesome.com/d3427147b8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <title>Quonota Clone</title>
-  </head>
-
-  <body>
-    <div id="wrap">
-      <!-- Top Navigation -->
-      <header class="header-top">
-        <div class="header-top__logo">
-          <a href="#">
-            <img src="assets/logo-light.svg" />
-          </a>
-        </div>
-        <div class="header-top__divider"></div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">Investment Expertise</a></li>
-            <li class="nav__item"><a href="#">Industries</a></li>
-            <li class="nav__item"><a href="#">Who we are</a></li>
-            <li class="nav__item"><a href="#">Media</a></li>
-            <li class="nav__item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-top__toggle">
-          <button id="toggle__menu" class="toggle__menu open">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      <!-- Sticky Scroll Navigation  -->
-      <header class="header-sticky">
-        <div class="header-sticky__logo">
-          <a href="#">
-            <img src="./assets/logo-dark.svg" />
-          </a>
-          <a href="#">
-            <img src="./assets/pri-logo.png" />
-          </a>
-        </div>
-        <div class="header-sticky__divider"></div>
-        <div class="header-top__toggle">
-          <button id="toggle__menu" class="toggle__menu open">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <nav class="sticky-navbar">
-          <ul class="sticky-navbar__list">
-            <li class="sticky-navbar__list-item">
-              <a href="#">Investment Expertise</a>
-            </li>
-            <li class="sticky-navbar__list-item"><a href="#">Industries</a></li>
-            <li class="sticky-navbar__list-item"><a href="#">Who we are</a></li>
-            <li class="sticky-navbar__list-item"><a href="#">Media</a></li>
-            <li class="sticky-navbar__list-item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-          <li><a href="#">Investment Expertise</a></li>
-          <li><a href="#">Industries</a></li>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Contact</a></li>
+<body>
+  <div id="wrap">
+    <!-- Top Navigation -->
+    <header class="top">
+      <div class="top__logo">
+        <a href="#">
+          <img src="assets/logo-light.svg" class="top__img" alt="nav-logo"/>
+        </a>
+      </div>
+      <div class="top__divider"></div>
+      <nav class="top-nav">
+        <ul class="top-nav__list">
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Investment Expertise</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Industries</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Who we are</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Media</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
+      <div class="toggle">
+        <button id="toggle__menu" class="toggle__menu open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-      <!-- Left side bar -->
-      <header class="left-bar">
-        <div class="left-bar__logo">
-          <img
-            src="./assets/logo-light.svg"
-            alt="left logo"
-            class="left-bar__img"
-          />
+    <!-- Sticky Scroll Navigation -->
+    <header class="sticky">
+      <div class="sticky__logo">
+        <a href="#" class="sticky__link">
+          <img src="./assets/logo-dark.svg" class="sticky__img" alt="logo"/>
+        </a>
+        <a href="#" class="sticky__link">
+          <img src="./assets/pri-logo.png" class="sticky__img" alt="pri-logo"/>
+        </a>
+      </div>
+      <div class="sticky__divider"></div>
+      <div class="toggle">
+        <button id="toggle__menu" class="toggle__menu open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="sticky-nav">
+        <ul class="sticky-nav__list">
+          <li class="sticky-nav__item">
+            <a href="#" class="sticky-nav__link">Investment Expertise</a>
+          </li>
+          <li class="sticky-nav__item">
+            <a href="#" class="sticky-nav__link">Industries</a>
+          </li>
+          <li class="sticky-nav__item">
+            <a href="#" class="sticky-nav__link">Who we are</a>
+          </li>
+          <li class="sticky-nav__item">
+            <a href="#" class="sticky-nav__link">Media</a>
+          </li>
+          <li class="sticky-nav__item">
+            <a href="#" class="sticky-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Size Menu -->
+    <nav class="mobile">
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Investment Expertise</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Industries</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Who we are</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Media</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Left Side Bar -->
+    <header class="side">
+      <div class="side__logo">
+        <img src="./assets/logo-light.svg" class="side__img" alt="side-logo"/>
+      </div>
+      <div class="side__scroll">
+        <a href="#target" class="side__link">
+          <span class="material-symbols-outlined side__icon"> south </span>
+          SCROLL DOWN
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section class="home">
+        <div class="home__content">
+          <div class="home__desc">
+            <h1 class="home__title">
+              Through
+              <span style="color: #f72334">Smart</span>
+              Funding,<br />Transformational Results.
+            </h1>
+            <p class="home__text">
+              We help innovators build breakout companies.
+            </p>
+            <div class="btn">
+              <a class="btn__link" href="#">Find Out More</a>
+            </div>
+            <div class="home__logo">
+              <a href="#">
+                <img class="home__img" src="./assets/pri-logo-2.png" alt="home-logo" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="left-bar__scroll">
-          <a href="#" class="left-bar__scroll-down">
-            <!-- <i class="fas fa-arrow-up"></i> -->
-            <span class="material-symbols-outlined"> south </span>
-            SCROLL DOWN
-          </a>
-        </div>
-      </header>
-    
-      <div id="main">
-        <!-- Home section -->
-        <section class="home-section">
-          <div class="home-section__content">
-            <div class="home-section__text">
-              <h1>
-                Through <span>Smart</span> Funding,<br />Transformational
-                Results.
-              </h1>
-              <p>We help innovators build breakout companies.</p>
-              <div class="section__btn">
-                <a href="#">Find Out More</a>
+      </section>
+
+      <!-- Slide Section -->
+      <section id="target" class="slide">
+        <div class="slide__container">
+          <div class="slide__content">
+            <div class="slide__header">
+              <h2 class="slide__title">Our Industries</h2>
+              <div class="slider__arrow">
+                <span class="material-symbols-outlined slider__arrow--prev">
+                  arrow_back_ios
+                </span>
+                <span class="material-symbols-outlined slider__arrow--next">
+                  arrow_forward_ios
+                </span>
               </div>
-              <div class="home-section__logo">
-                <a href="#">
-                  <img src="./assets/pri-logo-2.png" />
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--blue">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide1.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon">
+                      webhook
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Technology & Disruption</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--green">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide2.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--green">
+                      webhook
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Forestry & Industrials</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--purple">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide3.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--purple">
+                      currency_bitcoin
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Web3.0 & Blockchain</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--green">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide4.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--green">
+                      deceased
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Agriculture</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--green">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide5.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--green">
+                      workspaces
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Space & SpaceTech</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--blue">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide6.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--blue">
+                      account_balance
+                    </span>
+                    <div class="swiper__title">
+                      <h3>BioTech & Wellness</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--brown">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide7.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--brown">
+                      file_present
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Asset Management & Funds</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__card swiper__card--blue">
+                    <div class="swiper__box">
+                      <div class="swiper__bg">
+                        <div class="swiper__img" style="background-image:url('/assets/slide8.jpg');"></div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined swiper__icon swiper__icon--blue">
+                      settings
+                    </span>
+                    <div class="swiper__title">
+                      <h3>Franchise Operations</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Statistic Section -->
+      <section class="stat">
+        <div class="stat__container stat__container--pd">
+          <div class="stat__content">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__box">
+                  <span class="material-symbols-outlined card__icon">
+                    pie_chart
+                  </span>
+                </div>
+                <div class="card__desc">
+                  <div class="card__value">
+                    ><span class="first-num"></span>M
+                  </div>
+                  <div class="stat-card__text">Managed assets</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <div class="card__box">
+                  <span class="material-symbols-outlined card__icon">
+                    signal_cellular_alt
+                  </span>
+                </div>
+                <div class="card__desc">
+                  <div class="card__value">
+                    ><span class="second-num"></span>%
+                  </div>
+                  <div class="card__text">
+                    Of our investments dedicated to the innovation space
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <div class="card__box">
+                  <span class="material-symbols-outlined card__icon">
+                    webhook
+                  </span>
+                </div>
+                <div class="card__desc">
+                  <div class="card__value">>$1B</div>
+                  <div class="card__text">
+                    Total revenue of portfolio companies
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <div class="card__box">
+                  <span class="material-symbols-outlined card__icon">
+                    language
+                  </span>
+                </div>
+                <div class="card__desc">
+                  <div class="card__value">
+                    <span class="last-num"></span> Weeks
+                  </div>
+                  <div class="card__text">
+                    Average time from deal initiation to funds release
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who We Are Section -->
+      <section class="left">
+        <div class="left__container">
+          <div class="left__content">
+            <div class="left__desc">
+              <h2 class="left__title">Who We Are</h2>
+              <p class="left__text">
+                Quonota is a family office and investment company that helps
+                determined teams move forward fast, wherever they are in the
+                world. <br/><br/>
+                <strong>We invest in new ideas,</strong> models, products and
+                people with high growth potential that can weather adversity,
+                transform society, and generate long-term real returns for our
+                portfolio companies and stakeholders.
+              </p>
+              <div class="btn">
+                <a class="btn__link btn__link--black" href="#">Find Out More</a>
+              </div>
+            </div>
+            <div class="left__box">
+              <img class="left__img" src="./assets/section-3.png" alt="left-side-img"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Strategic Orientation Section -->
+      <section class="right">
+        <div class="right__container">
+          <div class="right__content right__content--reversed">
+            <div class="right__box">
+              <img class="right__img" src="./assets/section-4.png" alt="right-side-img"/>
+            </div>
+            <div class="right__desc">
+              <h2 class="right__title">Our Strategic Orientation</h2>
+              <p class="right__text">
+                We believe that finance alone is not enough to create global
+                success stories. So, we execute on our
+                <strong>Smart Funding Thesis.</strong> <br/>
+                <br/>
+                By providing strategy, guidance, counsel, operational
+                expertise, relationships and capital, the total value of our
+                service will far outweigh the initial monetary investment.
+              </p>
+              <div class="btn">
+                <a class="btn__link btn__link--black" href="#">Find Out More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Expertise Section -->
+      <section class="left">
+        <div class="left__container">
+          <div class="left__content">
+            <div class="left__desc">
+              <h2 class="left__title">Our Expertise</h2>
+              <p class="left__text">
+                We support a <strong>wide range of innovation</strong> by
+                investing globally and across far more risk levels, deal sizes
+                and industries than a typical investment firm.<br />
+                <br />
+                Our cross-sector approach enables a
+                <strong>creative ferment that ignites</strong> the engine of
+                innovation. We back teams for the long term, selecting those
+                that have a hunger for breakthrough and who share our hands-on
+                approach to investing.
+              </p>
+              <div class="btn">
+                <a class="btn__link btn__link--black" href="#">Find Out More</a>
+              </div>
+            </div>
+            <div class="left__box">
+              <img class="left__img" src="./assets/section-5.png" alt="left-side-img"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section class="quote">
+        <div class="quote__container">
+          <div class="quote__box">
+            <img class="quote__img" src="./assets/quote.png" alt="quote-man" />
+          </div>
+          <div class="quote__content">
+            <blockquote>
+              <p class="quote__desc">
+                Our mission is to be a catalyst for growth, both strategically
+                and operationally. We’re incredibly supportive of our
+                portfolio businesses and add material value that goes far
+                beyond investment capital.
+              </p>
+              <footer class="quote__footer">
+                <span class="material-symbols-outlined quote-icon">
+                  format_quote
+                </span>
+                <strong class="quote__footer--strong">Sergey Radchenko</strong>
+                <span class="quote__footer--span">Partner / Principal</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer__section">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div class="footer__logo">
+                <a>
+                  <img class="footer__img" src="./assets/logo-dark-full.svg" alt="logo" />
+                </a>
+                <a>
+                  <img class="footer__img footer__img-pri" src="./assets/pri-logo.png" alt="pri-logo" />
                 </a>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Slide section -->
-        <section class="section slide-section ">
-          <div class="section-container slide-container">
-            <div class="slide-content">
-              <div class="slide-content__header">
-                <h2>Our Industries</h2>
-                <div class="slider-arrow">
-                  <span class="material-symbols-outlined prev">
-                    arrow_back_ios
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">Terms & Conditions</li>
+                  <li class="footer-nav__item">Privacy Policy</li>
+                  <li class="footer-nav__item">Cookies Policy</li>
+                </ul>
+              </nav>
+              <div class="footer-contact">
+                <div class="footer-contact__item">
+                  <div class="footer-contact__icon">
+                    <span class="material-symbols-outlined footer-contact__icon--phone">
+                      call
                     </span>
-                    <span class="material-symbols-outlined next">
-                      arrow_forward_ios
-                      </span>
+                    <span>+357 25 731880</span>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div class="slider">
-                  <div class="slider-item" style="background-image:url('/assets/s1.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Technology & Disruption</h3>
-                    </div> -->
+                <div class="footer-contact__item">
+                  <div class="footer-contact__icon">
+                    <span class="material-symbols-outlined footer-contact__icon--email">
+                      mark_as_unread
+                    </span>
+                    <span>info@quonota.com</span>
                   </div>
-                  <div class="slider-item" style="background-image:url('/assets/s2.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Forestry & Industrials</h3>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s3.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Web3.0 & Blockchain</h3>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s4.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Agriculture</h3>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s5.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Space & SpaceTech</h3>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s6.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>BioTech & Wellness</span>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s7.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Asset Management & Funds</span>
-                    </div> -->
-                  </div>
-                  <div class="slider-item" style="background-image:url('/assets/s8.png');">
-                    <!-- <div class="bg-container">
-                      <div class="bg-img"></div>
-                      <h3>Franchise Operations</span>
-                    </div> -->
+                </div>
+                <div class="footer-contact__item">
+                  <div class="footer-contact__icon">
+                    <i class="fab fa-linkedin-in"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- statistic section -->
-        <section class="stat stat-section">
-          <div class="section-container stat-container">
-            <div class="stat-content">
-              <div class=" stat-card">
-                <div class="stat-card__content">
-                  <div class="stat-card__icon">
-                    <span class="material-symbols-outlined">
-                      pie_chart
-                      </span>
-                  </div>
-                  <div class="stat-card__desc">
-                    <div class="stat-card__value">>$<span class="count_num"></span>M</div>
-                    <div class="stat-card__text">Managed assets</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" stat-card">
-                <div class="stat-card__content">
-                  <div class="stat-card__icon">
-                    <span class="material-symbols-outlined">
-                      signal_cellular_alt
-                      </span>
-                  </div>
-                  <div class="stat-card__desc">
-                    <div class="stat-card__value">>50%</div>
-                    <div class="stat-card__text">Of our investments dedicated to the innovation space</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" stat-card">
-                <div class="stat-card__content">
-                  <div class="stat-card__icon">
-                      <span class="material-symbols-outlined">
-                        webhook
-                        </span>
-                  </div>
-                  <div class="stat-card__desc">
-                    <div class="stat-card__value">>$1B</div>
-                    <div class="stat-card__text">Total revenue of portfolio companies</div>
-                  </div>
-                </div>
-              </div>
-              <div class=" stat-card">
-                <div class="stat-card__content">
-                  <div class="stat-card__icon">
-                    <span class="material-symbols-outlined">
-                      language
-                      </span>
-                  </div>
-                  <div class="stat-card__desc">
-                    <div class="stat-card__value">4 Weeks</div>
-                    <div class="stat-card__text">Average time from deal initiation to funds release</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="footer-scroll">
+            <a href="#main" class="footer-scroll__link">Scroll Up
+              <span class="material-symbols-outlined footer-scroll__text">
+                north
+              </span></a>
           </div>
-        </section>
+        </div>
+      </footer>
+    </main>
+  </div>
 
-        <!-- who we are section -->
-        <section class="section left-section">
-          <div class="section-container left-container">
-            <div class="left-content">
-              <div class="left-content__desc">
-                <h2>Who We Are</h2>
-                <p>Quonota is a family office and investment company that helps determined teams move forward fast, wherever they are in the world. <br><br>
-                  <strong>We invest in new ideas,</strong> models, products and people with high growth potential that can weather adversity, transform society, and generate long-term real returns for our portfolio companies and stakeholders. </p>
-                  <div class="section__btn section__btn-black">
-                    <a href="#">Find Out More</a>
-                  </div>
-              </div>
-              <div class="left-content__img">
-                <img src="./assets/section-3.png" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Our Strategic Orientation section  -->
-        <section class="section right-section">
-          <div class="section-container right-container">
-            <div class="right-content reversed">
-              <div class="right-content__img">
-                <img src="./assets/section-4.png" />
-              </div>
-              <div class="right-content__desc">
-                <h2>Our Strategic Orientation</h2>
-                <p>We believe that finance alone is not enough to create global success stories. So, we execute on our  <strong>Smart Funding Thesis.</strong> <br>
-                  <br>
-                  By providing strategy, guidance, counsel, operational expertise, relationships and capital, the total value of our service will far outweigh the initial monetary investment. </p>
-                  <div class="section__btn section__btn-black">
-                    <a href="#">Find Out More</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-          <!-- Our Expertise section -->
-          <section class="section left-section">
-            <div class="section-container left-container">
-              <div class="left-content">
-                <div class="left-content__desc">
-                  <h2>Our Expertise</h2>
-                  <p>We support a <strong>wide range of innovation</strong> by investing globally and across far more risk levels, deal sizes and industries than a typical investment firm.<br>
-                  <br>
-                    Our cross-sector approach enables a <strong>creative ferment that ignites</strong> the engine of innovation. We back teams for the long term, selecting those that have a hunger for breakthrough and who share our hands-on approach to investing.</p>
-                    <div class="section__btn section__btn-black">
-                      <a href="#">Find Out More</a>
-                    </div>
-                </div>
-                <div class="left-content__img">
-                  <img src="./assets/section-5.png" />
-                </div>
-              </div>
-            </div>
-          </section>
-
-           <!-- Quote section -->
-          <section class="quote">
-            <div class="section-container quote-container">
-            <div class="quote-img">
-              <img src="./assets/quote.png" />
-            </div>
-            <div class="quote-content ">
-              <blockquote>
-                <p>Our mission is to be a catalyst for growth, both strategically and operationally. We’re incredibly supportive of our portfolio businesses and add material value that goes far beyond investment capital.</p>
-                <footer>
-                  <span class="material-symbols-outlined quote-icon">
-                    format_quote
-                  </span>
-                <strong>Sergey Radchenko</strong>
-                <span>Partner / Principal</span>
-                </footer>
-                </blockquote>
-            </div>
-            </div>
-          </section>
-
-          <footer>
-            <div class="section footer-section">
-              <div class="section-container footer-container">
-                <div class="footer-content">
-                  <div class="footer-logo">
-                    <a>
-                      <img src="./assets/logo-dark-full.svg" />
-                    </a>
-                    <a>
-                      <img src="./assets/pri-logo.png" class="pri"/>
-                    </a>
-                  </div>
-                  <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                      <li>Terms & Conditions</li>
-                      <li>Privacy Policy</li>
-                      <li >Cookies Policy</li>
-                    </ul>
-                  </nav>
-                  <div class="footer-contact">
-                    <div class="footer-contact__item">
-                      <div class="item-icon">
-                        <span class="material-symbols-outlined phone-icon">
-                          call
-                        </span>
-                        <span class="item-call">+357 25 731880</span>
-                      </div>
-                    </div>
-                    <div class="footer-contact__item">
-                      <div class="item-icon">
-                        <span class="material-symbols-outlined email-icon">
-                          mark_as_unread
-                        </span>
-                        <span class="item-email">info@quonota.com</span>
-                      </div>
-                    </div>
-                    <div class="footer-contact__item">
-                      <div class="item-icon">
-                        <i class="fab fa-linkedin-in"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="back-scroll">
-                <a href="#main">Scroll Up <span class="material-symbols-outlined"> north </span></a>
-              </div>
-            </div>
-          </footer>
-      </div>
-    </div>
-
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  </body>
+  <!-- Script -->
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
 </html>
