@@ -4,6 +4,12 @@ $(".side__link").click(function (event) {
   $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
 });
 
+// Footer scroll up button
+$(".footer-scroll__link").click(function (event) {
+  event.preventDefault();
+  $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+});
+
 // When scroll down, sticky Header show and hide
 $(document).ready(function () {
   $(".sticky").hide();
